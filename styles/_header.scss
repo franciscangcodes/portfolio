@@ -97,8 +97,8 @@
 }
 @include for-tablet-portrait-down {
     .hero {
-        height: 300px;
-        margin: 100px 50px;
+        // height: 300px;
+        margin: 50px 50px;
         // background-color: red;
         h1 {
             // padding-top: 100px;
@@ -117,7 +117,7 @@
 }
 @include for-phone-only {
     .hero {
-        margin: 100px 20px;
+        margin: 50px 20px;
     }
 }
 @include for-tablet-landscape-up {
@@ -125,7 +125,7 @@
         margin: 100px 100px;
         // width: 900px;
         h1 {
-            @include text-5xl;
+            @include text-3xl;
             font-weight: 900;
         }
         h2, h3 {
@@ -138,8 +138,9 @@
 }
 @include for-desktop-up {
     .hero {
+        margin: 200px;
         h1 {
-            @include text-7xl;
+            @include text-5xl;
         }
         h2 {
             @include text-2xl;
@@ -152,7 +153,6 @@
 @include for-big-desktop-up {
     .hero {
         width: 1200px;
-        margin: 200px;
     }
 }
 
